@@ -16,10 +16,9 @@ buildscript {
     }
 }
 
+
 allprojects {
-    lintOptions: {
-        checkReleaseBuilds false
-    }
+
     repositories {
         mavenLocal()
         jcenter()
