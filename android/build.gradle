@@ -17,6 +17,9 @@ buildscript {
 }
 
 allprojects {
+    lintOptions: {
+        checkReleaseBuilds false
+    }
     repositories {
         mavenLocal()
         jcenter()
@@ -28,14 +31,4 @@ allprojects {
             url "https://jitpack.io"
         }
     }
-}
-
-android {
-    lintOptions {
-        checkReleaseBuilds false
-    }
-}
-
-lintOptions {
-    checkReleaseBuilds false
 }
